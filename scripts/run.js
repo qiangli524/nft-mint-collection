@@ -1,3 +1,5 @@
+const hre = require('hardhat')
+
 const main = async () => {
   const nftContractFactory = await hre.ethers.getContractFactory('MyEpicNFT')
   const nftContract = await nftContractFactory.deploy()
